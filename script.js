@@ -1,4 +1,4 @@
-const dieFace = document.getElementById("dieface");
+const placeholder = document.getElementById("placeholder");
 const div = document.querySelectorAll("div");
 
 let button = document.getElementById("button");
@@ -13,6 +13,16 @@ const imgs = [
     "/Dice Images/dice-5.svg",
     "/Dice Images/dice-6.svg",
 ];
+
+
+button.addEventListener("click", () =>{
+    let randomNum = Math.floor(Math.random()*6) +1;
+    if (randomNum ===1){
+        document.getElementById("die1").src= "/Dice Images/dice-1.svg";
+    }
+    console.log(randomNum);
+});
+
 // button.onclick = function ()={
 
 // }
@@ -27,12 +37,3 @@ const imgs = [
 // document.querySelector("button").addEventListener("click", (event)=>{
 //     document.getElementById("dieface").style.visibility="none";
 // })
-
-
-button.addEventListener("click", () =>{
-    let randomNum = Math.floor(Math.random()*6) +1;
-    if (randomNum ===1){
-        document.getElementById("die1").src=`${imgs[0]}`
-    }
-    console.log(randomNum);
-});
