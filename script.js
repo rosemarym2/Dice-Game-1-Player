@@ -1,4 +1,5 @@
 const placeholder = document.getElementById("placeholder");
+const roll = document.getElementById("diceRoll");
 const die1 = document.getElementById("die1");
 const die2 = document.getElementById("die2");
 const die3 = document.getElementById("die3");
@@ -25,19 +26,19 @@ const imgs = [
 button.addEventListener("click", () =>{
     let randomNum = Math.floor(Math.random()*6) +1;
     if (randomNum ===1){
-        die1.innerHTML+= `<img class= "die1" src="${imgs[0]}"`;
+        roll.setAttribute = ("src",`${imgs[0]}`);
         counter = 0;
         score.innerText = `You lost! Total score: ${counter}`;
-        die1.style.visibility = "visible";
         placeholder.style.visibility = "hidden";
+        button.style.visibility = "hidden";
     } else if (randomNum ===2){
-        imgs.innerHTML+= `<img class= "die2" src="${imgs[1]}"`;
+        roll.innerHTML = `<img class= "die2" src="${imgs[1]}"`;
         counter += 2;
         score.innerText = `Total score: ${counter}`;
         die2.style.visibility = "visible";
         placeholder.style.visibility = "hidden";
     } else if (randomNum ===3){
-        document.getElementById("die3").src= "/Dice Images/dice-3.svg";
+        roll.innerHTML = `<img class= "die2" src="${imgs[2]}"`;
         counter += 3;
         score.innerText = `Total score: ${counter}`;
         die3.style.visibility = "visible";
@@ -64,13 +65,14 @@ button.addEventListener("click", () =>{
     console.log(randomNum);
     if (counter >= 21) {
         score.innerText =`You Won! Total score: ${counter}`;
-    
+        button.style.visibility = "hidden";
     }
 });
 
 startBtn.onclick = () => {
     counter = 0;
     score.innerText = `Total score: 0`;
+    button.style.visibility = "visible";
 };
 
 
