@@ -87,9 +87,8 @@ h4 {
   visibility: hidden;
 }
 
-/*mobile friendly width*/
-@media (min-width:320px) 
-
+/*mobile friendly width
+@media (min-width:320px)*/
 
 /* #placeholder {
   border: 3px solid black;
