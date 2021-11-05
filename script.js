@@ -29,27 +29,33 @@ button.addEventListener("click", () =>{
         roll.src =`${imgs[0]}`;
         counter = 0;
         score.innerText = `You lost! Total score: ${counter}`;
+        document.getElementById("number").innerHTML= `Dice Roll: ${randomNum}`;
         button.style.visibility = "hidden";
     } else if (randomNum ===2){
         roll.src =`${imgs[1]}`;
         counter += 2;
         score.innerText = `Total score: ${counter}`;
+        document.getElementById("number").innerHTML= `Dice Roll: ${randomNum}`;
     } else if (randomNum ===3){
         roll.src =`${imgs[2]}`;
         counter += 3;
         score.innerText = `Total score: ${counter}`;
+        document.getElementById("number").innerHTML= `Dice Roll: ${randomNum}`;
     } else if (randomNum ===4){
         roll.src =`${imgs[3]}`;
         counter += 4;
         score.innerText = `Total score: ${counter}`;
+        document.getElementById("number").innerHTML= `Dice Roll: ${randomNum}`;
     } else if (randomNum ===5){
         roll.src =`${imgs[4]}`;
         counter += 5;
         score.innerText = `Total score: ${counter}`;
+        document.getElementById("number").innerHTML= `Dice Roll: ${randomNum}`;
     } else if (randomNum ===6){
         roll.src =`${imgs[5]}`;
         counter += 6;
         score.innerText = `Total score: ${counter}`;
+        document.getElementById("number").innerHTML= `Dice Roll: ${randomNum}`;
     }
     console.log(randomNum);
     if (counter >= 20) {
@@ -62,6 +68,7 @@ startBtn.onclick = () => {
     counter = 0;
     score.innerText = `Total score: 0`;
     button.style.visibility = "visible";
+    document.getElementById("number").innerHTML= `Number`;
 };
 
 
