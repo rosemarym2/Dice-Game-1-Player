@@ -7,6 +7,7 @@ const die5 = document.getElementById("die5");
 const die6 = document.getElementById("die6");
 
 let button = document.getElementById("button");
+let startBtn = document.getElementById("start-agn-btn");
 let score = document.getElementById("score");
 let randomNum = document.getElementById("number");
 let counter = 0;
@@ -26,7 +27,7 @@ button.addEventListener("click", () =>{
     if (randomNum ===1){
         die1.innerHTML+= `<img class= "die1" src="${imgs[0]}"`;
         counter = 0;
-        score.innerText = `Total score: ${counter}`;
+        score.innerText = `You lost! Total score: ${counter}`;
         die1.style.visibility = "visible";
         placeholder.style.visibility = "hidden";
     } else if (randomNum ===2){
@@ -63,13 +64,14 @@ button.addEventListener("click", () =>{
     console.log(randomNum);
     if (counter >= 21) {
         score.innerText =`You Won! Total score: ${counter}`;
-        
+    
     }
 });
 
-// button.onclick = function () => {
-// placeholder.style.visibility = "hidden";
-// };
+startBtn.onclick = () => {
+    counter = 0;
+    score.innerText = `Total score: 0`;
+};
 
 
 
