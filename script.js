@@ -14,49 +14,50 @@ let randomNum = document.getElementById("number");
 let counter = 0;
 
 const imgs = [
-    "/Dice Images/dice-1.svg",
-    "/Dice Images/dice-2.svg",
-    "/Dice Images/dice-3.svg",
-    "/Dice Images/dice-4.svg",
-    "/Dice Images/dice-5.svg",
-    "/Dice Images/dice-6.svg",
+    "/Dice-Images/dice-1.svg",
+    "/Dice-Images/dice-2.svg",
+    "/Dice-Images/dice-3.svg",
+    "/Dice-Images/dice-4.svg",
+    "/Dice-Images/dice-5.svg",
+    "/Dice-Images/dice-6.svg",
 ];
 
 
 button.addEventListener("click", () =>{
     let randomNum = Math.floor(Math.random()*6) +1;
     if (randomNum ===1){
-        roll.setAttribute = ("src",`${imgs[0]}`);
+        // roll.setAttribute = ("src",`${imgs[0]}`);
+        roll.src =`${imgs[0]}`;
         counter = 0;
         score.innerText = `You lost! Total score: ${counter}`;
         placeholder.style.visibility = "hidden";
         button.style.visibility = "hidden";
     } else if (randomNum ===2){
-        roll.innerHTML = `<img class= "die2" src="${imgs[1]}"`;
+        roll.src =`${imgs[1]}`;
         counter += 2;
         score.innerText = `Total score: ${counter}`;
         die2.style.visibility = "visible";
         placeholder.style.visibility = "hidden";
     } else if (randomNum ===3){
-        roll.innerHTML = `<img class= "die2" src="${imgs[2]}"`;
+        roll.src =`${imgs[2]}`;
         counter += 3;
         score.innerText = `Total score: ${counter}`;
         die3.style.visibility = "visible";
         placeholder.style.visibility = "hidden";
     } else if (randomNum ===4){
-        document.getElementById("die4").src= "/Dice Images/dice-4.svg";
+        roll.src =`${imgs[3]}`;
         counter += 4;
         score.innerText = `Total score: ${counter}`;
         die4.style.visibility = "visible";
         placeholder.style.visibility = "hidden";
     } else if (randomNum ===5){
-        document.getElementById("die5").src= "/Dice Images/dice-5.svg";
+        roll.src =`${imgs[4]}`;
         counter += 5;
         score.innerText = `Total score: ${counter}`;
         die5.style.visibility = "visible";
         placeholder.style.visibility = "hidden";
     } else if (randomNum ===6){
-        document.getElementById("die6").src= "/Dice Images/dice-6.svg";
+        roll.src =`${imgs[5]}`;
         counter += 6;
         score.innerText = `Total score: ${counter}`;
         die6.style.visibility = "visible";
