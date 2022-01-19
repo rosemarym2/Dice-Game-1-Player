@@ -61,7 +61,7 @@ button.addEventListener("click", () =>{
     console.log(randomNum);
     if (counter >= 20) {
         score.innerText =`You Won! Total score: ${counter}`;
-        roll.src =`${imgs[5]}`;
+        roll.src =`${imgs[6]}`;
         button.style.visibility = "hidden";
     }
 });
