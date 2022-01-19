@@ -14,12 +14,12 @@ let randomNum = document.getElementById("number");
 let counter = 0;
 
 const imgs = [
-    "/Dice-Images/dice-1.svg",
-    "/Dice-Images/dice-2.svg",
-    "/Dice-Images/dice-3.svg",
-    "/Dice-Images/dice-4.svg",
-    "/Dice-Images/dice-5.svg",
-    "/Dice-Images/dice-6.svg",
+    "/dice-images/dice-1.svg",
+    "/dice-images/dice-2.svg",
+    "/dice-images/dice-3.svg",
+    "/dice-images/dice-4.svg",
+    "/dice-images/dice-5.svg",
+    "/dice-images/dice-6.svg",
 ];
 
 

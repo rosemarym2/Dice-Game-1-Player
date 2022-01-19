@@ -23,15 +23,18 @@ button {
 }
 
 #diceRoll {
-  width: 80%;
-  height: 80%;
+  width: 50%;
+  height: 50%;
   margin: 0;
   padding: 0;
+  background-color: white;
+  border-radius: 20%;
   display: inline-block;
   justify-content: center;
   flex-wrap: wrap;
 }
 
+#die1,
 #die2 {
   width: 100px;
   height: 100px;
