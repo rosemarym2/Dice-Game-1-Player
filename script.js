@@ -20,6 +20,7 @@ const imgs = [
     "./Dice-Images/dice-4.svg",
     "./Dice-Images/dice-5.svg",
     "./Dice-Images/dice-6.svg",
+    "./Dice-Images/winner.gif",
 ];
 
 
@@ -60,6 +61,7 @@ button.addEventListener("click", () =>{
     console.log(randomNum);
     if (counter >= 20) {
         score.innerText =`You Won! Total score: ${counter}`;
+        roll.src =`${imgs[6]}`;
         button.style.visibility = "hidden";
     }
 });
