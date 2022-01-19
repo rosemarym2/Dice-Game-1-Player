@@ -29,7 +29,7 @@ button.addEventListener("click", () =>{
     if (randomNum ===1){
         roll.src =`${imgs[0]}`;
         counter = 0;
-        score.innerText = `You lost! Total score: ${counter}`;
+        score.innerText = `Oh no, you lost! Total score: ${counter}`;
         document.getElementById("number").innerHTML= `Dice Roll: ${randomNum}`;
         button.style.visibility = "hidden";
     } else if (randomNum ===2){
